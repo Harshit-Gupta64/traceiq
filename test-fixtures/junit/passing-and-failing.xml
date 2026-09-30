@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sample-suite" tests="3" failures="1" skipped="1" time="0.42">
+  <testcase classname="example.MathTests" name="addsNumbers" time="0.01"/>
+  <testcase classname="example.MathTests" name="dividesNumbers" time="0.02">
+    <failure message="expected 4 but got 5" type="AssertionError">Assertion failed in sample fixture.</failure>
+  </testcase>
+  <testcase classname="example.NetworkTests" name="externalService" time="0.39">
+    <skipped message="disabled in fixture"/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,2 @@
+[synthetic fixture] Test timed out after 30000 ms
+at example.NetworkTests.waitsForResponse(NetworkTests.java:42)
