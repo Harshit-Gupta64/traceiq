@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+.local-artifacts
+evidence
+package-lock.json
+*.md

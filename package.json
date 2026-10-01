@@ -1,0 +1,47 @@
+{
+  "name": "traceiq",
+  "version": "0.1.0",
+  "description": "Intelligent CI failure diagnosis and test reliability platform",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/src/server.js",
+    "migrate:up": "tsx src/db/migrate-cli.ts up",
+    "migrate:down": "tsx src/db/migrate-cli.ts down",
+    "migrate:status": "tsx src/db/migrate-cli.ts status",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "docker:ps": "docker compose ps"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.9",
+    "@types/pg": "^8.11.11",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "prettier": "^3.5.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0",
+    "vitest": "^3.0.7"
+  }
+}

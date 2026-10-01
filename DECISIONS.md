@@ -10,6 +10,9 @@
 7. API: versioned REST with OpenAPI.
 8. Initial ingestion: manual JUnit XML upload and GitHub webhook path.
 9. Explainability: show evidence, provenance, confidence/uncertainty, and limitations.
+10. HTTP Framework: Fastify for lightweight, high-performance TypeScript routing, built-in injection testing, and graceful shutdown handling.
+11. Database Migrations: Transactional SQL migration engine (`src/db/migrator.ts`) executing plain `.up.sql` and `.down.sql` files within ACID transactions.
+12. Schema Deferral: Only a minimal `system_metadata` foundation table is created in Milestone 1; entity domain models (users, orgs, runs, analysis) are deferred to later milestones.
 
 ## Not yet finalized
 - Redis + BullMQ versus PostgreSQL-backed job queue
